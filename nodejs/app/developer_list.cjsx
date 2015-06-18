@@ -7,7 +7,7 @@ DeveloperList = React.createClass
   displayName: 'DeveloperList'
   statics:
     fetchData: (params, callback) ->
-      console.log 'fetching'
+      'Fetching from Github'
       options =
         url: "https://api.github.com/users?since=#{params.page*30}"
         headers:

@@ -1,3 +1,4 @@
-node_modules
-npm-debug.log
-app/public/js
+nodejs/node_modules
+nodejs/npm-debug.log
+nodejs/app/public/js
+php/vendor

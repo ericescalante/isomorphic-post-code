@@ -17,6 +17,7 @@ This will start the node server up, create the javascript bundle for the browser
 Now, open a new terminal tab and go to the  `isomorphic-post-code` directory as well. Then type the following to get the PHP side of things going.
 ```
 cd php
+curl -sS https://getcomposer.org/installer | php
 php composer.phar install
 php -S localhost:8000
 ```
@@ -36,7 +37,7 @@ Things to try out:
 * If you're really into hardcore experiences, visit the page with [lynx](http://lynx.browser.org/)!
 
 ### Now fiddle with the PHP one!
-Go to `http://localhost:9000/developers/page/1` and you should see now the output of `index.php`:
+Go to `http://localhost:8000/developers/page/1` and you should see now the output of `index.php`:
 
 ![Alt text](/screenshots/screenshot2.png?raw=true "PHP app")
 

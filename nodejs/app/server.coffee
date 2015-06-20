@@ -10,7 +10,7 @@ gutil = require 'gulp-util'
 
 
 regularPort = 3000
-dnodePort = 4000
+dnodePort = 3001
 
 # HTTP server
 app.get '/developers/page/*', (req, res) ->

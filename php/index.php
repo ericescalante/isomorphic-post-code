@@ -9,9 +9,9 @@
     <div class="container">
       <div class="jumbotron">
       <h1>Sample PHP page</h1>
-      <p>The content below should is rendered from from the server, with php/node/react via dnode.</p>
+      <p>The content below is rendered server-side with PHP/node/react via dnode.</p>
+      <p>Subsequent pagination is done with react client-side via Ajax.</p>
       <p>This could be a Drupal, Wordpress, or any other kind of PHP app :)</p>
-      <p>After the first rendering subsuequent pagination is done with React via Ajax.</p>
     </div>
 
     <div class="panel panel-default" style="padding:20px;">
@@ -23,7 +23,7 @@
   $options  = array('page' => array_pop($path));
   $loop = new React\EventLoop\StreamSelectLoop();
   $dnode = new DNode\DNode($loop);
-  $dnode->connect(4000, function($remote, $connection) use($options) {
+  $dnode->connect(3001, function($remote, $connection) use($options) {
     $remote->renderIndex($options, function($result) use ($connection) {
         echo $result;
         $connection->end();

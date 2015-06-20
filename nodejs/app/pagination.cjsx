@@ -4,12 +4,6 @@ Link = require('react-router').Link
 
 Pagination = React.createClass
   displayName: 'Pagination'
-  prevPage: (e) ->
-    e.preventDefault()
-    this.props.pageChanged this.props.currentPage - 1
-  nextPage: (e) ->
-    e.preventDefault()
-    this.props.pageChanged this.props.currentPage + 1  
   render: ->
     prevClasses = cx
       'glyphicon': true

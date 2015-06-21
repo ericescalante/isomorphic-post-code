@@ -25,7 +25,7 @@ DeveloperList = React.createClass
       <div className="row">
         {profiles}
       </div>
-      <Pagination pageChanged={this.handlePagechange} currentPage={parseInt this.props.params.page}/>
+      <Pagination currentPage={parseInt this.props.params.page}/>
     </div>
 
 module.exports = DeveloperList

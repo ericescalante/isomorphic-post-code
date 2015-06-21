@@ -1,5 +1,4 @@
 require 'coffee-react/register'
-https = require 'https'
 React = require 'react'
 Router = require 'react-router'
 routes = require './routes'
@@ -7,7 +6,6 @@ dnode = require 'dnode'
 express = require 'express'
 app = express()
 gutil = require 'gulp-util'
-
 
 regularPort = 3000
 dnodePort = 3001

@@ -1,7 +1,9 @@
 # isomorphic-post-code
 
 ### What's going on here?
-This little repo provides the companion code for the [isomorphic React in a PHP application](http://ericescalante.github.io/2015/06/07/isomorphic/) post. It contains a small node.js app and a tiny PHP app.
+This little repo provides the companion code for the [isomorphic React in a PHP application](http://ericescalante.github.io/2015/06/07/isomorphic/) post. It contains a small node.js app and a tiny PHP app. 
+
+I wrote the code for this post using coffeescript, I love it's simplicity and terseness (specially since I've been working on Rails for almost a year). As soon as react 0.14 comes out I'll do a rewrite using ES2015 (via Babel).
 
 ### Setup instructions
 To get started, clone this repo then cd into the `isomorphic-post-code` directory. You will find inside a `nodejs` folder and a `php` fodler.
